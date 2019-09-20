@@ -1,0 +1,2 @@
+.nav{background-color:#57697b;height:100vh;width:20vw;color:#fff}.nav__logo{width:100%;padding:1em}.nav__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.nav__items{list-style:none}.nav__grid{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr;grid-template-columns:1fr 1fr;text-align:center;font-size:0.8em}
+/*# sourceMappingURL=app.min.css.map */
