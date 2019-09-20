@@ -1,4 +1,11 @@
 
+h1, h2, h3, h4, h5, h6{
+margin: 0;
+}
+
+a {
+    color: white;
+}
 
 .nav {
     background-color: #57697b;
@@ -9,7 +16,7 @@
 
     &__logo{
         width: 100%;
-        padding: 1em;
+        padding: 1.5em;
     }
 
     &__wrapper {
@@ -19,7 +26,17 @@
     }
     &__items{
         list-style: none;
-        
+        padding: 1em 0 0 0;
+    }
+    &__item{
+        width: 100%;
+        border-top: 1px solid slategray;
+        &--last{
+            border-bottom: 1px solid slategray;
+        }
+    }
+    &__link-content {
+        padding: 0.8em 2em;
     }
     &__grid{
         display: grid;
