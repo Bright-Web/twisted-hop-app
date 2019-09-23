@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Twisted Hop</title>
 
+    <script src="https://kit.fontawesome.com/0fd52a7f62.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,59 +15,94 @@
     <link rel="stylesheet" href="/dist/css/app.min.css" />
   </head>
   <body>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <div class="nav__top">
-          <div class="nav__logo-wrapper">
-            <img class="nav__logo" src="/assets/logo.png" alt="" />
+    <div class="appwrap">
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <div class="nav__top">
+            <div class="nav__logo-wrapper">
+              <img class="nav__logo" src="/assets/logo.png" alt="" />
+            </div>
+            <div class="nav__main">
+              <ul class="nav__items">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    <div class="nav__link-content">
+                        <i class="nav__link-icon fas fa-home"></i>
+                      <h5 class="nav__item-title">Home</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    <div class="nav__link-content">
+                        <i class="nav__link-icon fas fa-utensils"></i>
+                      <h5 class="nav__item-title">Drinks</h5>
+                    </div>
+                  </a>
+                </li>
+                <li class="nav__item nav__item--last">
+                  <a class="nav__link" href="#">
+                    <div class="nav__link-content">
+                        <i class="nav__link-icon fas fa-beer"></i>
+                      <h5 class="nav__item-title">Food</h5>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="nav__main">
-            <ul class="nav__items">
-              <li class="nav__item">
-                <a class="nav__link" href="#">
-                  <div class="nav__link-content">
-                    <h5 class="nav__item-title">Home</h5>
-                  </div>
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">
-                  <div class="nav__link-content">
-                    <h5 class="nav__item-title">Drinks</h5>
-                  </div>
-                </a>
-              </li>
-              <li class="nav__item nav__item--last">
-                <a class="nav__link" href="#">
-                  <div class="nav__link-content">
-                    <h5 class="nav__item-title">Food</h5>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <div class="nav__bottom">
+            <div class="nav__grid">
+              <div class="nav__grid-item">
+                <i class="nav__grid-icon fas fa-bell"></i>
+                <p class="nav__grid-item-title">Wait Staff</p>
+              </div>
+              <div class="nav__grid-item">
+                <i class="nav__grid-icon fas fa-gamepad"></i>
+                <p class="nav__grid-item-title">Activities</p>
+              </div>
+              <div class="nav__grid-item">
+                <i class="nav__grid-icon fas fa-user"></i>
+                <p class="nav__grid-item-title">Account</p>
+              </div>
+              <div class="nav__grid-item">
+                <i class="nav__grid-icon fas fa-question-circle"></i>
+                <p class="nav__grid-item-title">Help</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="nav__bottom">
-          <div class="nav__grid">
-            <div class="nav__grid-item">
-              <div class="nav__icon"></div>
-              <p class="nav__grid-item-title">Wait Staff</p>
+      </nav>
+      <section class="main">
+        <div class="main__heading">   
+            <h1 class="main__title">Welcome to The Twisted Hop</h1>     
+        </div>
+        <p class="main__text">
+            The Twisted Hop on Ferry Road opened in November 2012. With a history in Christchurch going back to 2004, we are a craft beer gastropub with our point of difference being cask-conditioned ale. Our passion is to provide high quality products in comfortable and unpretentious surroundings. We take pride in offering a fine selection of national/international craft beers and ciders, an outstanding wine list and delicious food. </br> </br> 
+            It is our belief that a pub should be at the very heart of the community and we endeavour to make everyone as comfortable as they would feel in their own home. So, whether you are already a regular or chanced upon us for the first time, we warmly welcome you.
+        </p>
+        <div class="specials">
+          <h3 class="specials__title">Specials</h3>
+          <hr class="specials__line">
+          <div class="specials__wrap">
+            <div class="specials__item specials__item--1">
+              <p class="specials__name">2 for 1 Cocktails Tuesday 5-6pm</p>
             </div>
-            <div class="nav__grid-item">
-              <div class="nav__icon"></div>
-              <p class="nav__grid-item-title">Activities</p>
+            <div class="specials__item specials__item--2">
+              <p class="specials__name">Chefs Special Salmon and Prawns Bowl</p>
             </div>
-            <div class="nav__grid-item">
-              <div class="nav__icon"></div>
-              <p class="nav__grid-item-title">Account</p>
+            <div class="specials__item specials__item--3">
+              <p class="specials__name">Craft Beer Happy Hours Friday 3-6pm</p>
             </div>
-            <div class="nav__grid-item">
-              <div class="nav__icon"></div>
-              <p class="nav__grid-item-title">Help</p>
+            <div class="specials__item specials__item--4">
+              <p class="specials__name">Staff Pick BBQ Chicken Wings</p>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+        
+      </section>
+    </div>
+
+
   </body>
 </html>
