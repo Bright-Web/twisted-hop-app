@@ -1,0 +1,25 @@
+.main {
+  width: 80vw;
+  height: 100vh;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__heading {
+    height: 33vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.55)),
+      url(/assets/bar.jpg) center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__text {
+    padding: 1em 0;
+  }
+}

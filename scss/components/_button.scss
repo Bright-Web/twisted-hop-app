@@ -1,0 +1,13 @@
+.button{
+    background-color: #7cdb7c;
+    text-align: center;
+    padding: 0.2em 0.7em;
+    color: #fff;
+    text-transform: uppercase;
+
+    &--secondary{
+        border: 1px solid #7cdb7c;
+        background-color: #fff;
+        color: #7cdb7c;
+    }
+}

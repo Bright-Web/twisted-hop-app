@@ -1,0 +1,41 @@
+.specials{
+
+    &__wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__item--1{
+        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        url(/assets/cocktails.jpg) center;
+        background-size: contain;
+    }
+    &__item--2{
+        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        url(/assets/chefs.jpg) center;
+        background-size: contain;
+    }
+    &__item--3{
+        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        url(/assets/beerspecial.jpg) center;
+        background-size: contain;
+    }
+    &__item--4{
+        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        url(/assets/wings.jpg) center;
+        background-size: contain;
+    }
+
+    &__name{
+        font-size: 1.2em;
+        padding: 4em 1em;
+        color: #fff;
+        line-height: 1.5em;
+    }
+}

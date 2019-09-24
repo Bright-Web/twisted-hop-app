@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase
+}
+
+a {
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+  font-family: "Lato", sans-serif;
+  color: #57697b;
+  line-height: 1.2em;
+  font-weight: 300;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
