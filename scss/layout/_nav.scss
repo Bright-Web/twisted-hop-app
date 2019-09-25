@@ -1,4 +1,5 @@
 .nav {
+  position: fixed;
     background-color: #516169;
     height: 100vh;
     width: 20vw;
@@ -32,12 +33,18 @@
       &-title{
           padding-left: 1em;
       }
+      &--active{
+        background-color: #45545a;
+      }
     }
     &__link-content {
       padding: 0.8em 2em;
       display: grid;
       grid-template-columns: 1fr 4fr;
       align-items: center;
+      &--active{
+        color: #7cdb7c;
+      }
     }
     &__grid {
       display: grid;
@@ -65,4 +72,25 @@
     &__bottom{
         height: 20vh;
     }
+    &__submenu{
+      list-style: none;
+    }
+    &__submenu {
+      list-style: none;
+      border-top: 1px solid slategray;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    &__subitem {
+      padding: 0.2em 0;
+      
+  }
+    &__sublink{
+      &--active{
+        color: #7cdb7c;
+      }
+    }
+
+
+
   }
