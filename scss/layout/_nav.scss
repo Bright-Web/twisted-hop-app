@@ -76,13 +76,25 @@
       list-style: none;
     }
     &__submenu {
+      max-height: 200px;
       list-style: none;
-      border-top: 1px solid slategray;
-      padding-top: 1em;
-      padding-bottom: 1em;
+      padding: 0;
+      overflow-y: hidden;
+      transition: all 0.5s ease;
+      &--hidden{
+        max-height: 0;
+        transition: all 0.5s ease !important;
+      }
     }
     &__subitem {
-      padding: 0.2em 0;
+      padding: 0.2em 2em;
+      &--first{
+        border-top: 1px solid slategray;
+        padding-top: 1em;
+      }
+      &--last{
+        padding-bottom: 1em;
+      }
       
   }
     &__sublink{
