@@ -6,6 +6,7 @@
     text-transform: uppercase;
     border: none;
     font-size: 0.9em;
+    cursor: pointer;
 
     &--secondary{
         border: 1px solid #7cdb7c;
@@ -14,6 +15,9 @@
     }
     &--disabled{
         opacity: .3;
+    }
+    &--red{
+        background-color: #db7c7c;
     }
 
 }

@@ -10,6 +10,18 @@ let home = document.querySelector(".home")
 let content = document.querySelector(".content")
 let main = document.querySelector(".main")
 let orders = document.querySelector(".orders")
+let noOrders = document.querySelector(".orders__none")
+let orderDrink = document.querySelector(".order")
+let confirmAge = document.querySelector(".confirm-age")
+let confirmButton= document.querySelector(".confirm-button")
+
+confirmAge.addEventListener('click', function(){
+    noOrders.classList.add("notdisplayed")
+    orderDrink.classList.remove("notdisplayed")
+    confirmButton.classList.remove("button--disabled")
+    
+})
+
 
 
 

@@ -1,11 +1,15 @@
 .modal-content {
     border: none;
     border-radius: 0;
+    padding: 3em;
+    text-align: center;
 }
 
 .modal-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0;
+    border: none;
 }
 
 .modal-footer>:not(:last-child) {
@@ -13,4 +17,42 @@
 }
 .modal-footer>:not(:first-child) {
     margin-left: 1rem;
+}
+
+.modal-footer-2{
+    padding: 0;
+    padding-top: 2em;
+}
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 40vw;
+}}
+.modal-header {
+    padding: 0;
+    justify-content: center;
+    border: none;
+}
+.modal-body {
+    padding: 2em 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #516169;
+}
+
+button.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #516169;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5em;
+}
+.modal .button{
+    font-size: 1em;
 }

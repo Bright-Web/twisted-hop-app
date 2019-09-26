@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,101 +9,53 @@
 
     <script src="https://kit.fontawesome.com/0fd52a7f62.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/dist/css/app.min.css" />
-  </head>
-  <body>
+    
+</head>
+
+<body>
     <div class="appwrap">
-      <nav class="nav">
-        <div class="nav__wrapper">
-          <div class="nav__top">
-            <div class="nav__logo-wrapper">
-              <img class="nav__logo" src="/assets/logo.png" alt="" />
-            </div>
-            <div class="nav__main">
-              <ul class="nav__items">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">
-                    <div class="nav__link-content">
-                        <i class="nav__link-icon fas fa-home"></i>
-                      <h5 class="nav__item-title">Home</h5>
+
+       
+            <section class="splash" data-toggle="modal" data-target="#signModal">
+                <div class="splash__overlay"></div>
+                <img src="/assets/logo.png" alt="" class="splash__logo">
+            </section>
+       
+
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signModal" tabindex="-1" role="dialog" aria-labelledby="signModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="signModalLabel">Please Sign In To Continue</h5>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">
-                    <div class="nav__link-content">
-                        <i class="nav__link-icon fas fa-utensils"></i>
-                      <h5 class="nav__item-title">Drinks</h5>
+                    <div class="modal-body">
+                        If you wish to take advantage of member benefits you will either need to log in or sign up to our loyalty program. Otherwise you can just continue as a guest.
                     </div>
-                  </a>
-                </li>
-                <li class="nav__item nav__item--last">
-                  <a class="nav__link" href="#">
-                    <div class="nav__link-content">
-                        <i class="nav__link-icon fas fa-beer"></i>
-                      <h5 class="nav__item-title">Food</h5>
+                    <div class="modal-footer">
+                        <div class="button button--secondary">Log In</div>
+                        <div class="button button--secondary">Sign Up</div>
                     </div>
-                  </a>
-                </li>
-              </ul>
+                    <div class="modal-footer-2">
+                        <a href="/main.html"><div class="button">Continue as a Guest</div></a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="nav__bottom">
-            <div class="nav__grid">
-              <div class="nav__grid-item">
-                <i class="nav__grid-icon fas fa-bell"></i>
-                <p class="nav__grid-item-title">Wait Staff</p>
-              </div>
-              <div class="nav__grid-item">
-                <i class="nav__grid-icon fas fa-gamepad"></i>
-                <p class="nav__grid-item-title">Activities</p>
-              </div>
-              <div class="nav__grid-item">
-                <i class="nav__grid-icon fas fa-user"></i>
-                <p class="nav__grid-item-title">Account</p>
-              </div>
-              <div class="nav__grid-item">
-                <i class="nav__grid-icon fas fa-question-circle"></i>
-                <p class="nav__grid-item-title">Help</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </nav>
-      <section class="main">
-        <div class="main__heading">   
-            <h1 class="main__title">Welcome to The Twisted Hop</h1>     
-        </div>
-        <p class="main__text">
-            The Twisted Hop on Ferry Road opened in November 2012. With a history in Christchurch going back to 2004, we are a craft beer gastropub with our point of difference being cask-conditioned ale. Our passion is to provide high quality products in comfortable and unpretentious surroundings. We take pride in offering a fine selection of national/international craft beers and ciders, an outstanding wine list and delicious food. </br> </br> 
-            It is our belief that a pub should be at the very heart of the community and we endeavour to make everyone as comfortable as they would feel in their own home. So, whether you are already a regular or chanced upon us for the first time, we warmly welcome you.
-        </p>
-        <div class="specials">
-          <h3 class="specials__title">Specials</h3>
-          <hr class="specials__line">
-          <div class="specials__wrap">
-            <div class="specials__item specials__item--1">
-              <p class="specials__name">2 for 1 Cocktails Tuesday 5-6pm</p>
-            </div>
-            <div class="specials__item specials__item--2">
-              <p class="specials__name">Chefs Special Salmon and Prawns Bowl</p>
-            </div>
-            <div class="specials__item specials__item--3">
-              <p class="specials__name">Craft Beer Happy Hours Friday 3-6pm</p>
-            </div>
-            <div class="specials__item specials__item--4">
-              <p class="specials__name">Staff Pick BBQ Chicken Wings</p>
-            </div>
-          </div>
-        </div>
-        
-      </section>
+
+
+
     </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
 
-
-  </body>
 </html>
