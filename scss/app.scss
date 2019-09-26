@@ -10,6 +10,10 @@
 @import './components/modal';
 
 
+.notdisplayed{
+    display: none;
+}
+
 .content {
     width: 55vw;
     background: #EAEAEA;
@@ -59,11 +63,24 @@
     }
 }
 
+.content--main{
+    width: 80vw;
+    background: #EAEAEA;
+    padding: 0;
+    margin-left: 20vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
 .beers{
     &__items{
 
     display: grid;
     grid-gap: 1em;
+    }
+    &__line {
+        border-top-color: #516169;
+        margin-top: 0.5em;
     }
     
 }
@@ -87,5 +104,66 @@
     &__total-wrapper{
         display: flex;
         justify-content: space-between;
+    }
+    &__info {
+        font-size: 0.9em;
+    }
+    &__quantity-wrapper {
+        font-size: 0.9em;
+    }
+    &__total-wrapper {
+        font-size: 0.9em;
+    }
+}
+
+.foods{
+    &__items{
+
+    display: grid;
+    grid-gap: 1em;
+    }
+    &__line {
+        border-top-color: #516169;
+        margin-top: 0.5em;
+    }
+    
+}
+
+.brunch{
+    background: #fff;
+    display: flex;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__buttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+
+    &__image {
+        max-height: 130px;
+    }
+    &__allergy {
+        align-self: flex-end;
+        font-size: 0.9em;
+    }
+    &__info {
+        padding-bottom: 0.3em;
+        font-size: 0.9em;
+    }
+    &__name{
+        font-size: 1em;
+    }
+    &__price{
+        font-size: 1em;
     }
 }

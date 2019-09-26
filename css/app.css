@@ -22,7 +22,7 @@ a:hover {
 p {
   margin-bottom: 0;
   font-family: "Lato", sans-serif;
-  color: #57697b;
+  color: #516169;
   line-height: 1.2em;
   font-weight: 300;
 }
@@ -30,6 +30,12 @@ p {
 h3 {
   font-size: 1.2em;
   font-weight: 400;
+  color: #516169;
+}
+
+.content h6,
+.orders h6 {
+  color: #516169;
 }
 
 .appwrap {
@@ -118,6 +124,8 @@ h3 {
 .nav__item {
   width: 100%;
   border-top: 1px solid slategray;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
 }
 
 .nav__item--last {
@@ -130,6 +138,7 @@ h3 {
 
 .nav__item--active {
   background-color: #45545a;
+  color: #7cdb7c;
 }
 
 .nav__link-content {
@@ -141,10 +150,6 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav__link-content--active {
-  color: #7cdb7c;
 }
 
 .nav__grid {
@@ -184,17 +189,46 @@ h3 {
 }
 
 .nav__submenu {
+  max-height: 200px;
   list-style: none;
-  border-top: 1px solid slategray;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 0;
+  overflow-y: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav__submenu--hidden {
+  max-height: 0;
+  -webkit-transition: all 0.5s ease !important;
+  transition: all 0.5s ease !important;
 }
 
 .nav__subitem {
-  padding: 0.2em 0;
+  padding: 0.2em 2em;
+}
+
+.nav__subitem--first {
+  border-top: 1px solid slategray;
+  padding-top: 1em;
+}
+
+.nav__subitem--last {
+  padding-bottom: 1em;
 }
 
 .nav__sublink--active {
+  color: #7cdb7c;
+}
+
+.home-is-active {
+  background-color: #45545a;
+  color: #7cdb7c;
+}
+
+.home-is-active a {
+  background-color: #45545a;
   color: #7cdb7c;
 }
 
@@ -290,7 +324,7 @@ h3 {
 }
 
 .beer__image {
-  max-height: 100px;
+  max-height: 80px;
   padding-right: 1em;
 }
 
@@ -299,12 +333,33 @@ h3 {
       align-self: flex-end;
 }
 
+.beer__percentage {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0.9em;
+}
+
+.beer__info {
+  padding-bottom: 0.3em;
+  font-size: 0.9em;
+}
+
+.beer__name {
+  font-size: 1em;
+}
+
+.beer__price {
+  font-size: 1em;
+}
+
 .button {
   background-color: #7cdb7c;
   text-align: center;
   padding: 0.2em 0.7em;
   color: #fff;
   text-transform: uppercase;
+  border: none;
+  font-size: 0.9em;
 }
 
 .button--secondary {
@@ -313,11 +368,41 @@ h3 {
   color: #7cdb7c;
 }
 
+.button--disabled {
+  opacity: .3;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.modal-footer > :not(:first-child) {
+  margin-left: 1rem;
+}
+
+.notdisplayed {
+  display: none;
+}
+
 .content {
   width: 55vw;
   background: #EAEAEA;
   padding: 1em;
   margin-left: 20vw;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .orders {
@@ -371,9 +456,148 @@ h3 {
   padding: 1em;
 }
 
+.orders__content {
+  padding: 1em;
+}
+
+.orders__none {
+  padding: 1em;
+  background-color: #fff;
+}
+
+.content--main {
+  width: 80vw;
+  background: #EAEAEA;
+  padding: 0;
+  margin-left: 20vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .beers__items {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
+}
+
+.beers__line {
+  border-top-color: #516169;
+  margin-top: 0.5em;
+}
+
+.order {
+  background-color: #fff;
+  padding: 1em;
+}
+
+.order--unconfirmed {
+  border-left: 3px solid #db7c7c;
+}
+
+.order--confirmed {
+  border-left: 3px solid #7cdb7c;
+}
+
+.order__quantity-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__total-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__info {
+  font-size: 0.9em;
+}
+
+.order__quantity-wrapper {
+  font-size: 0.9em;
+}
+
+.order__total-wrapper {
+  font-size: 0.9em;
+}
+
+.foods__items {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+}
+
+.foods__line {
+  border-top-color: #516169;
+  margin-top: 0.5em;
+}
+
+.brunch {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brunch__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+}
+
+.brunch__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brunch__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.brunch__image {
+  max-height: 130px;
+}
+
+.brunch__allergy {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 0.9em;
+}
+
+.brunch__info {
+  padding-bottom: 0.3em;
+  font-size: 0.9em;
+}
+
+.brunch__name {
+  font-size: 1em;
+}
+
+.brunch__price {
+  font-size: 1em;
 }
 /*# sourceMappingURL=app.css.map */

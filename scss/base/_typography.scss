@@ -6,7 +6,8 @@ h5,
 h6 {
   margin: 0;
   font-family: "Lato", sans-serif;
-  text-transform: uppercase
+  text-transform: uppercase;
+  
 }
 
 a {
@@ -21,11 +22,18 @@ a:hover {
 p {
     margin-bottom: 0;
   font-family: "Lato", sans-serif;
-  color: #57697b;
+  color: #516169;
   line-height: 1.2em;
   font-weight: 300;
 }
 h3 {
     font-size: 1.2em;
     font-weight: 400;
+    color: #516169;
+}
+
+.content h6,
+.orders h6
+ {
+  color: #516169;
 }

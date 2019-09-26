@@ -19,11 +19,25 @@
     }
 
     &__image {
-        max-height: 100px;
+        max-height: 80px;
         padding-right: 1em;
     }
     &__percentage {
         align-self: flex-end;
+    }
+    &__percentage {
+        align-self: flex-end;
+        font-size: 0.9em;
+    }
+    &__info {
+        padding-bottom: 0.3em;
+        font-size: 0.9em;
+    }
+    &__name{
+        font-size: 1em;
+    }
+    &__price{
+        font-size: 1em;
     }
 }
 

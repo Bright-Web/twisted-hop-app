@@ -27,6 +27,7 @@
     &__item {
       width: 100%;
       border-top: 1px solid slategray;
+      transition: ease 1s;
       &--last {
         border-bottom: 1px solid slategray; 
       }
@@ -35,6 +36,7 @@
       }
       &--active{
         background-color: #45545a;
+        color: #7cdb7c;
       }
     }
     &__link-content {
@@ -42,9 +44,6 @@
       display: grid;
       grid-template-columns: 1fr 4fr;
       align-items: center;
-      &--active{
-        color: #7cdb7c;
-      }
     }
     &__grid {
       display: grid;
@@ -81,6 +80,7 @@
       padding: 0;
       overflow-y: hidden;
       transition: all 0.5s ease;
+      transition-delay: 0.2s;
       &--hidden{
         max-height: 0;
         transition: all 0.5s ease !important;
@@ -106,3 +106,13 @@
 
 
   }
+
+
+.home-is-active {
+  background-color: #45545a;
+  color: #7cdb7c;
+}
+.home-is-active a{
+  background-color: #45545a;
+  color: #7cdb7c;
+}
