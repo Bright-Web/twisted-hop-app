@@ -17,27 +17,18 @@ let confirmButton= document.querySelector(".confirm-button")
 let confirmOrder= document.querySelector(".confirm-order")
 let billButton= document.querySelector(".bill-button")
 
-
-
-
-
 confirmOrder.addEventListener('click', function(){
     orderDrink.classList.add("order--confirmed")
     orderDrink.classList.remove("order--unconfirmed")
     confirmButton.classList.add("button--disabled")
     billButton.classList.remove("button--disabled")
-    
 })
 
 confirmAge.addEventListener('click', function(){
     noOrders.classList.add("notdisplayed")
     orderDrink.classList.remove("notdisplayed")
     confirmButton.classList.remove("button--disabled")
-    
 })
-
-
-
 
 food.addEventListener('click', function(){
     drinksSub.classList.add("nav__submenu--hidden")
@@ -50,8 +41,8 @@ food.addEventListener('click', function(){
     content.classList.remove("content--main")
     main.classList.add("notdisplayed")
     orders.classList.remove("notdisplayed")
-    
 })
+
 drinks.addEventListener('click', function(){
     drinksSub.classList.remove("nav__submenu--hidden")
     foodSub.classList.add("nav__submenu--hidden")
@@ -64,7 +55,6 @@ drinks.addEventListener('click', function(){
     main.classList.add("notdisplayed")
     orders.classList.remove("notdisplayed")
 })
-
 
 home.addEventListener('click', function(){
 foodSub.classList.add("nav__submenu--hidden")
