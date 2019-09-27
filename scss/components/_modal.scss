@@ -56,3 +56,56 @@ button.close {
 .modal .button{
     font-size: 1em;
 }
+
+
+#beerModal{
+
+    .modal-header{
+        justify-content: space-between;
+    }
+    .modal-title{
+        border: none;
+    }
+    .modal-body{
+        padding: 0 0 2em;
+    }
+    .modal-sub {
+        padding: 1em 0;
+        border-bottom: 1px solid #516169;
+        border-top: 1px solid #516169;
+        margin-bottom: 1em;
+    }
+    .modal-brewery{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.5em;
+        &-title{
+            font-weight: 500;
+        }
+    }
+    .modal-type{
+        display: flex;
+        justify-content: space-between;
+        &-title{
+            font-weight: 500;
+        }
+    }
+
+    .beerLine{
+
+    }
+
+    .modal-content {
+        text-align: left;
+    }
+    .qty{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        input {
+            overflow: visible;
+            text-align: center;
+        }
+    }
+}

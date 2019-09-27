@@ -14,6 +14,20 @@ let noOrders = document.querySelector(".orders__none")
 let orderDrink = document.querySelector(".order")
 let confirmAge = document.querySelector(".confirm-age")
 let confirmButton= document.querySelector(".confirm-button")
+let confirmOrder= document.querySelector(".confirm-order")
+let billButton= document.querySelector(".bill-button")
+
+
+
+
+
+confirmOrder.addEventListener('click', function(){
+    orderDrink.classList.add("order--confirmed")
+    orderDrink.classList.remove("order--unconfirmed")
+    confirmButton.classList.add("button--disabled")
+    billButton.classList.remove("button--disabled")
+    
+})
 
 confirmAge.addEventListener('click', function(){
     noOrders.classList.add("notdisplayed")
