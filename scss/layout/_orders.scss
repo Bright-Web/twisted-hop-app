@@ -1,0 +1,47 @@
+
+.orders {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: 25vw;
+    background: $grey;
+    box-shadow: 0px 0px 15px 1px #0000002e;
+
+    &__header{
+        text-align: center;
+        padding: 1em 0;
+        background: $primary;
+        color: #fff;
+    }
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        padding: 1em;
+    }
+    &__content{
+        padding: 1em;
+    }
+    &__none{
+        padding: 1em;
+        background-color: #fff;
+    }
+    &__none-heading{
+        @include larger{
+            font-size: 1.2em;
+            padding-bottom: 0.5em;
+            font-weight: 500;
+        }
+    }
+}

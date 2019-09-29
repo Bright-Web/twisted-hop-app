@@ -1,5 +1,5 @@
 .button{
-    background-color: #7cdb7c;
+    background-color: $secondary;
     text-align: center;
     padding: 0.2em 0.7em;
     color: #fff;
@@ -7,11 +7,14 @@
     border: none;
     font-size: 0.9em;
     cursor: pointer;
+    @include larger{
+        font-size: 1.2em;
+      }
 
     &--secondary{
-        border: 1px solid #7cdb7c;
+        border: 1px solid $secondary;
         background-color: transparent;
-        color: #7cdb7c;
+        color: $secondary;
     }
     &--disabled{
         opacity: .3;

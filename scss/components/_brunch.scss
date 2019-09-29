@@ -1,12 +1,13 @@
-.beer{
+
+.brunch{
     background: #fff;
-    padding: 1em;
     display: flex;
     &__content{
         display: flex;
         flex-direction: column;
         width: 100%;
-        justify-content: space-between
+        justify-content: space-between;
+        padding: 1em;
     }
     &__row{
         display: flex;
@@ -19,15 +20,12 @@
     }
 
     &__image {
-        max-height: 80px;
-        padding-right: 1em;
+        max-height: 130px;
         @include larger {
-            max-height: 110px;
-            padding-right: 2em;
-        }
+                max-height: 170px;
+         }
     }
-
-    &__percentage {
+    &__allergy {
         align-self: flex-end;
         font-size: 0.9em;
         @include larger{
@@ -54,4 +52,3 @@
           }
     }
 }
-

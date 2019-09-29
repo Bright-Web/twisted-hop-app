@@ -1,0 +1,22 @@
+.content {
+    width: 55vw;
+    background: $grey;
+    padding: 1em;
+    margin-left: 20vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
+
+.notdisplayed{
+    display: none;
+}
+
+.content--main{
+    width: 80vw;
+    background: $grey;
+    padding: 0;
+    margin-left: 20vw;
+    height: 100vh;
+    overflow: hidden;
+}

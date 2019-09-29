@@ -10,26 +10,41 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        @include larger {
+            min-height: 350px;
+        }
     }
     &__item--1{
-        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
         url(/assets/cocktails.jpg) center;
         background-size: contain;
+        @include larger {
+            background-size: cover;
+        }
     }
     &__item--2{
-        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
         url(/assets/chefs.jpg) center;
         background-size: contain;
+        @include larger {
+            background-size: cover;
+        }
     }
     &__item--3{
-        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
         url(/assets/beerspecial.jpg) center;
         background-size: contain;
+        @include larger {
+            background-size: cover;
+        }
     }
     &__item--4{
-        background: linear-gradient(rgba(0, 0, 0, 0.55)),
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
         url(/assets/wings.jpg) center;
         background-size: contain;
+        @include larger {
+            background-size: cover;
+        }
     }
 
     &__name{
@@ -37,5 +52,8 @@
         padding: 4em 1em;
         color: #fff;
         line-height: 1.5em;
+        @include larger{
+            font-size: 1.5em;
+          }
     }
 }

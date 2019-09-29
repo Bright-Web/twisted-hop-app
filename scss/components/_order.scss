@@ -1,0 +1,37 @@
+.order{
+    background-color: #fff;
+    padding: 1em;
+
+    &--unconfirmed{
+    border-left: 3px solid #db7c7c;
+    }
+    &--confirmed{
+        border-left: 3px solid $secondary;
+    }
+
+    &__quantity-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__total-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        font-size: 0.9em;
+        @include larger{
+            font-size: 1.2em;
+        }
+    }
+    &__quantity-wrapper {
+        font-size: 0.9em;
+    }
+    &__total-wrapper {
+        font-size: 0.9em;
+    }
+    &__heading{
+        @include larger{
+            font-size: 1.2em;
+        }
+    }
+}

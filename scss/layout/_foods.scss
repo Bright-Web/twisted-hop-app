@@ -1,0 +1,13 @@
+
+.foods{
+    &__items{
+
+    display: grid;
+    grid-gap: 1em;
+    }
+    &__line {
+        border-top-color: $primary;
+        margin-top: 0.5em;
+    }
+    
+}
